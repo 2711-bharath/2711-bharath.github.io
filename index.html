@@ -43,7 +43,7 @@
             </li>
             <li class="nav__item">
               <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Projects
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
               </a>
             </li>
             <li class="nav__item">
@@ -693,13 +693,116 @@
       </section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
 
-      <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section"></section>
+        <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.jpg" alt="" class="protfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Bloggers.</h3>
+                        <p class="portfolio__description">
+                            Bloggers. it is web app where user can login through gmail and can add posts and view others posts.
+                            It is adaptable to all devices and with animated interaction.</p>
+                        <a href="https://blogsite-bd045.web.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio2.jpg" alt="" class="protfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Kanban Board</h3>
+                        <p class="portfolio__description">
+                            It is an application for testing my vue skills.
+                            In this app users need to login and they can track their tasks on a project and change the tasks status using drag and drop between status.
+                        </p>
+                        <a href="https://kanban-board-2711bharath.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio5.jpg" alt="" class="protfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">MERN Todo</h3>
+                        <p class="portfolio__description">
+                            Using MongoDB, Express, React and NodeJs created a todo app. It also supports some shorcut keys
+                            for good user experience. 
+                        </p>
+                        <a href="https://2711bharath-mern-todo-app.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio4.jpg" alt="" class="protfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Covid Tracker</h3>
+                        <p class="portfolio__description">
+                            It is an Angular Firebase application it uses public APIs to get information about covid country-wise.
+                            It also displays covid cases state-wise in India.
+                        </p>
+                        <a href="https://github.com/2711-bharath/Covid19-Tracker-App" target="_blank" class="button button--flex button--small portfolio__button">
+                            View code
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio6.gif" alt="" class="protfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Github Profile Viewer</h3>
+                        <p class="portfolio__description">
+                            Used to display stats of a github user using their username.
+                        </p>
+                        <a href="https://github-profile-view-vue.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio3.jpg" alt="" class="protfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Employee Manager App</h3>
+                        <p class="portfolio__description">
+                            Simple CRUD application using angular and spring-boot. Used to manage employees in a single website.
+                        </p>
+                        <a href="https://github.com/2711-bharath/Spring-Boot-CRUD" target="_blank" class="button button--flex button--small portfolio__button">
+                            View code
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+    
+        </div>
+      </section>
 
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -707,10 +810,7 @@
 
     <!--==================== SCROLL TOP ====================-->
 
-    <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
-
-    <!--==================== MAIN JS ====================-->
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
