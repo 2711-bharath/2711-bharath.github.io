@@ -105,17 +105,142 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
       clickable: true,
     },
 });
-  
-/*==================== TESTIMONIAL ====================*/
-
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute("id");
+    
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document
+            .querySelector(".nav__menu a[href*=" + sectionId + "]")
+            .classList.add("active-link");
+        } else {
+          document
+            .querySelector(".nav__menu a[href*=" + sectionId + "]")
+            .classList.remove("active-link");
+        }    
+    })
+}
+
+window.addEventListener("scroll", scrollActive);
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
+function scrollHeader() {
+    const nav = document.getElementById("header");
+    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    if (this.scrollY >= 80) nav.classList.add("scroll-header");
+    else nav.classList.remove("scroll-header");
+  }
+  window.addEventListener("scroll", scrollHeader);
+  
 
 /*==================== SHOW SCROLL UP ====================*/ 
-
+function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if (this.scrollY >= 100) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
+  
 
 /*==================== DARK LIGHT THEME ====================*/ 
+
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
+
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+
+}
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+
+  console.log(`${getCurrentTheme()} theme`)
+
+  const path = getCurrentTheme() === "dark" ? "assets/img/developer-dark.svg" : "assets/img/developer.svg"
+  document.getElementById('developer_img').setAttribute('src', path)
+});
+
+/*==================== TEXT TYPE ====================*/ 
+var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
