@@ -22,7 +22,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="uil uil-estate nav__icon"></i> Home
               </a>
             </li>
@@ -56,6 +56,8 @@
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -127,27 +129,32 @@
             </div>
 
             <div class="home__data">
-                <h1 class="home__title">Hi, I'am Bharath</h1>
-                <h3 class="home__subtitle">Frontend developer</h3>
-                <p class="home__description">
-                    I design and code beautifully simple things, and I love what I do.
-                </p>
-                <a href="#contact" class="button button-flex">
-                    Contact Me <i class="uil uil-message button__icon"></i>
-                </a>
+              <h1 class="home__title">
+                Hey, I'am Bharath  ;)
+              </h1>
+              <h2 class="typewrite home__subtitle" data-period="1000" data-type='["Frontend developer", "Backend developer", "Full Stack developer", "I love to code ❤", "Hobbies 👉", "Badminton 🏸", "Sketching ✍️", "Viewing Tech Gadgets 🤖" ]'>
+                <span class="wrap"></span>
+              </h2>
+            
+              <p class="home__description">
+                I design and code simple things, and I love what I
+                do.
+              </p>
+              <a href="#contact" class="button button-flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
             </div>
-
           </div>
         </div>
       </section>
       <div class="home__scroll">
         <a href="#about" class="home__scroll-button button--flex">
-            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-            <div class="home__scroll-name">Scroll</div>
-            <div class="home__scroll-name"> down</div>
-            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+          <div class="home__scroll-name">Scroll</div>
+          <div class="home__scroll-name">down</div>
+          <i class="uil uil-arrow-down home__scroll-arrow"></i>
         </a>
-       </div>
+      </div>
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
@@ -155,40 +162,59 @@
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-            <img src="assets/img/" alt="" class="about__img">
+          <img
+            src="assets/img/developer.svg"
+            alt=""
+            class="about__img"
+            id="developer_img"
+          />
 
-            <div class="about__data">
-                <p class="about__description">
-                    Hello! I'm Bharath Reddy, <br/> 
-                    I am persuing my Bachelors of Technology from Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology (2019-2023).
-                    <br /> <br />
-                    I am an enthusiastic and goal-oriented engineering student, looking for opportunity to utilize strong problem solving, communication and development skills.
-                    I have done work in software development, front-end/back-end web.
-                </p>
+          <div class="about__data">
+            <p class="about__description">
+              Hello! I'm Bharath Reddy, <br />
+              I am persuing my Bachelors of Technology from Vallurupalli
+              Nageswara Rao Vignana Jyothi Institute of Engineering and
+              Technology (2019-2023).
+              <br />
+              <br />
+              I am an enthusiastic and goal-oriented engineering student,
+              looking for opportunity to utilize strong problem solving,
+              communication and development skills. I have done work in frontend, backend web development and software
+              development.
+            </p>
+          </div>
+
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">01+</span>
+              <span class="about__info-name"
+                >Years <br />
+                experience</span
+              >
             </div>
 
-            <div class="about__info">
-                <div>
-                    <span class="about__info-title">01+</span>
-                    <span class="about__info-name">Years <br /> experience</span>
-                </div>
-
-                <div>
-                    <span class="about__info-title">15+</span>
-                    <span class="about__info-name">Completed <br /> projects</span>
-                </div>
-
-                <div>
-                    <span class="about__info-title">02+</span>
-                    <span class="about__info-name">Companies <br /> worked</span>
-                </div>
+            <div>
+              <span class="about__info-title">15+</span>
+              <span class="about__info-name"
+                >Completed <br />
+                projects</span
+              >
             </div>
 
-            <div class="about__buttons">
-                <a download="" href="assets/pdf/" class="button button--flex">
-                    Download Resume <i class="uil uil-download-alt button__icon"></i>
-                </a>
+            <div>
+              <span class="about__info-title">02+</span>
+              <span class="about__info-name"
+                >Companies <br />
+                worked</span
+              >
             </div>
+          </div>
+
+          <div class="about__buttons">
+            <a download="" href="assets/pdf/resume.pdf" class="button button--flex">
+              Download Resume <i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -198,255 +224,253 @@
         <span class="section__subtitle">My technical level</span>
 
         <div class="skill__container container grid">
-            <div>
-                <!--==================== Frontend Developement ====================-->
-                <div class="skills__content skills__open">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
+          <div>
+            <!--==================== Frontend Developement ====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
 
-                        <div>
-                            <h1 class="skills__title">Frontend development</h1>
-                            <span class="skills__subtitle">More than 2 years</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">HTML</h3>
-                                <span class="skills_number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__html"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
-                                <span class="skills_number">70%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__css"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Javascript</h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__javascript"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Vue</h3>
-                                <span class="skills_number">75%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__vue"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Angular</h3>
-                                <span class="skills_number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__angular"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">React</h3>
-                                <span class="skills_number">50% (Basic)</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                  <h1 class="skills__title">Frontend development</h1>
+                  <span class="skills__subtitle">More than 2 years</span>
                 </div>
 
-                <!--==================== Backend Development ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-server-network skills__icon"></i>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
 
-                        <div>
-                            <h1 class="skills__title">Backend development</h1>
-                            <span class="skills__subtitle">More than 1 year</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Node.js</h3>
-                                <span class="skills_number">40%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__nodejs"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Express</h3>
-                                <span class="skills_number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__express"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">MongoDB</h3>
-                                <span class="skills_number">40%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__mongodb"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">MYSQL</h3>
-                                <span class="skills_number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__mysql"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Firebase</h3>
-                                <span class="skills_number">70%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__firebase"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Python</h3>
-                                <span class="skills_number">30% (Learning)</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__python"></span>
-                            </div>
-                        </div>
-                    </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills_number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
                 </div>
-
-                <!--==================== Competitive Programming ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-code-branch skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__title">Competitive Programming</h1>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">C programming</h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__c"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">C++</h3>
-                                <span class="skills_number">75%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__cpp"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Python</h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__python_p"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Java</h3>
-                                <span class="skills_number">50% (Basics)</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__java"></span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills_number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
                 </div>
-
-
-
-                <!--==================== Software and OS ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-desktop skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__title">Software and OS</h1>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Windows</h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__windows"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">VS Code</h3>
-                                <span class="skills_number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__vscode"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Git Bash</h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__git-bash"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Postman</h3>
-                                <span class="skills_number">50%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__postman"></span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__javascript"></span>
+                  </div>
                 </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Vue</h3>
+                    <span class="skills_number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__vue"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Angular</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__angular"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills_number">50% (Basic)</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!--==================== Backend Development ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Backend development</h1>
+                  <span class="skills__subtitle">More than 1 year</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node.js</h3>
+                    <span class="skills_number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__nodejs"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Express</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__express"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MongoDB</h3>
+                    <span class="skills_number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__mongodb"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MYSQL</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__mysql"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills_number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__firebase"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills_number">30% (Learning)</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__python"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== Competitive Programming ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-code-branch skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Competitive Programming</h1>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C programming</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__c"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C++</h3>
+                    <span class="skills_number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__cpp"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__python_p"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Java</h3>
+                    <span class="skills_number">50% (Basics)</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__java"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== Software and OS ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-desktop skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Software and OS</h1>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Windows</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__windows"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">VS Code</h3>
+                    <span class="skills_number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__vscode"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Git Bash</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__git-bash"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Postman</h3>
+                    <span class="skills_number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__postman"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -456,115 +480,131 @@
         <span class="section__subtitle">My personal journey</span>
 
         <div class="qualification__container container">
-            <div class="qualification__tabs">
-                <div class="qualification__button button--flex qualification__active" data-target="#education">
-                    <i class="uil uil-graduation-cap qualification__icon"></i>
-                    Education
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Bachelor in Computer Science and Engineering
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >VNR Vignana Jyothi Institute of Engineering and
+                    Technology</span
+                  >
+                  <span class="qualification__subtitle">CGPA: 9.02 / 10.0</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calender-alt"></i>
+                    2019 - 2023
+                  </div>
                 </div>
-                <div class="qualification__button button--flex" data-target="#work">
-                    <i class="uil uil-briefcase-alt qualification__icon"></i>
-                    Work
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
                 </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Intermediate</h3>
+                  <span class="qualification__subtitle"
+                    >Bhashyam IIT-JEE Junior College</span
+                  >
+                  <span class="qualification__subtitle">CGPA: 9.7 / 10.0</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calender-alt"></i>
+                    2017 - 2019
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">High School</h3>
+                  <span class="qualification__subtitle"
+                    >Bhashyam Public School</span
+                  >
+                  <span class="qualification__subtitle">CGPA: 9.7 / 10.0</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calender-alt"></i>
+                    2016 - 2017
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
             </div>
 
-            <div class="qualification__sections">
-                <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                <div class="qualification__content qualification__active" data-content id="education">
-
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">Bachelor in Computer Science and Engineering</h3>
-                            <span class="qualification__subtitle">VNR Vignana Jyothi Institute of Engineering and Technology</span>
-                            <span class="qualification__subtitle">CGPA: 9.02 / 10.0</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calender-alt"></i>
-                                2019 - 2023
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="qualification__title">Intermediate</h3>
-                            <span class="qualification__subtitle">Bhashyam IIT-JEE Junior College</span>
-                            <span class="qualification__subtitle">CGPA: 9.7 / 10.0</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calender-alt"></i>
-                                2017 - 2019
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">High School</h3>
-                            <span class="qualification__subtitle">Bhashyam Public School</span>
-                            <span class="qualification__subtitle">CGPA: 9.7 / 10.0</span>
-                            <div class="qualification__calendar">
-                                <i class="uil uil-calender-alt"></i>
-                                2016 - 2017
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
+            <div class="qualification__content" data-content id="work">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Frontend Developer - Intern
+                  </h3>
+                  <span class="qualification__subtitle">
+                    SenseHawk India Pvt. Ltd. - Mumbai
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    03,Jan,2022 - Present
+                  </div>
                 </div>
 
-                <div class="qualification__content" data-content id="work">
-                    <div class="qualification__data">
-                      <div>
-                        <h3 class="qualification__title">
-                          Frontend Developer - Intern
-                        </h3>
-                        <span class="qualification__subtitle">
-                            SenseHawk India Pvt. Ltd. - Mumbai
-                        </span>
-                        <div class="qualification__calendar">
-                          <i class="uil uil-calendar-alt"></i> 
-                          03,Jan,2022 - Present
-                        </div>
-                      </div>
-      
-                      <div>
-                        <div class="qualification__rounder"></div>
-                        <div class="qualification__line"></div>
-                      </div>
-                    </div>
+                <div>
+                  <div class="qualification__rounder"></div>
+                  <div class="qualification__line"></div>
+                </div>
+              </div>
 
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                          <div class="qualification__rounder"></div>
-                          <div class="qualification__line"></div>
-                        </div>
-        
-                        <div>
-                          <h3 class="qualification__title">
-                            Angular Developer - Intern
-                          </h3>
-                          <span class="qualification__subtitle">Fosterate  Pvt. Ltd. - Hyderabad</span>
-                          <div class="qualification__calendar">
-                            <i class="uil uil-calendar-alt"></i> 
-                            15,May,2021 - 19,July,2021
-                          </div>
-                        </div>
-                    </div>
-                </div>      
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <div class="qualification__rounder"></div>
+                  <div class="qualification__line"></div>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Angular Developer - Intern
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Fosterate Pvt. Ltd. - Hyderabad</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    15,May,2021 - 19,July,2021
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -574,121 +614,140 @@
         <span class="section__subtitle">What i offer</span>
 
         <div class="services__container container grid">
-
-            <div class="services__content">
-                <div>
-                    <i class="uil uil-web-grid services__icon"></i>
-                    <h3 class="service__title">Frontend <br /> Developer</h3>
-                </div>
-
-                <span class="button button--flex button--link services__button">
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </span>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <h4 class="services__modal-title">Frontend <br /> Developer</h4>
-                        <i class="uil uil-times services__modal-close"></i>
-
-                        <ul class="services__model-services grid">
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I create adaptive user interfacese.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I develop web pages.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I am flexible with using different frameworks.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I write high-quality code.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I troubleshoot and adress bugs.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="service__title">
+                Frontend <br />
+                Developer
+              </h3>
             </div>
 
-            <div class="services__content">
-                <div>
-                    <i class="uil uil-cog services__icon"></i>
-                    <h3 class="service__title">Backend <br /> Developer</h3>
-                </div>
+            <span class="button button--flex button--link services__button">
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
 
-                <span class="button button--flex button--link services__button">
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Frontend <br />
+                  Developer
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
 
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <h4 class="services__modal-title">Backend <br /> Developer</h4>
-                        <i class="uil uil-times services__modal-close"></i>
+                <ul class="services__model-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I create adaptive user interfacese.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I develop web pages.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I am flexible with using different frameworks.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I write high-quality code.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I troubleshoot and adress bugs.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                        <ul class="services__model-services grid">
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I design and architect backend APIs.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I use Node.js and Python.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I use my strong problem solving skills.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="services__content">
+            <div>
+              <i class="uil uil-cog services__icon"></i>
+              <h3 class="service__title">
+                Backend <br />
+                Developer
+              </h3>
             </div>
 
-            <div class="services__content">
-                <div>
-                    <i class="uil uil-brackets-curly services__icon"></i>
-                    <h3 class="service__title">Full Stack <br /> Developer</h3>
-                </div>
+            <span class="button button--flex button--link services__button">
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
 
-                <span class="button button--flex button--link services__button">
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Backend <br />
+                  Developer
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
 
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <h4 class="services__modal-title">Full Stack <br /> Developer</h4>
-                        <i class="uil uil-times services__modal-close"></i>
-
-                        <ul class="services__model-services grid">
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I develop a complete website.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I create adaptive user interfacese.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I design and architect backend APIs.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I have a positive attitude and a passion for sharing knowledge.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="services__model-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I design and architect backend APIs.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I use Node.js and Python.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I use my strong problem solving skills.</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
+          </div>
+
+          <div class="services__content">
+            <div>
+              <i class="uil uil-brackets-curly services__icon"></i>
+              <h3 class="service__title">
+                Full Stack <br />
+                Developer
+              </h3>
+            </div>
+
+            <span class="button button--flex button--link services__button">
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Full Stack <br />
+                  Developer
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__model-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I develop a complete website.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I create adaptive user interfacese.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I design and architect backend APIs.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      I have a positive attitude and a passion for sharing
+                      knowledge.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -698,119 +757,284 @@
         <span class="section__subtitle">Most recent work</span>
 
         <div class="portfolio__container container swiper-container">
-            <div class="swiper-wrapper">
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio1.jpg" alt="" class="protfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Bloggers.</h3>
-                        <p class="portfolio__description">
-                            Bloggers. it is web app where user can login through gmail and can add posts and view others posts.
-                            It is adaptable to all devices and with animated interaction.</p>
-                        <a href="https://blogsite-bd045.web.app/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio2.jpg" alt="" class="protfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Kanban Board</h3>
-                        <p class="portfolio__description">
-                            It is an application for testing my vue skills.
-                            In this app users need to login and they can track their tasks on a project and change the tasks status using drag and drop between status.
-                        </p>
-                        <a href="https://kanban-board-2711bharath.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio5.jpg" alt="" class="protfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">MERN Todo</h3>
-                        <p class="portfolio__description">
-                            Using MongoDB, Express, React and NodeJs created a todo app. It also supports some shorcut keys
-                            for good user experience. 
-                        </p>
-                        <a href="https://2711bharath-mern-todo-app.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio4.jpg" alt="" class="protfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Covid Tracker</h3>
-                        <p class="portfolio__description">
-                            It is an Angular Firebase application it uses public APIs to get information about covid country-wise.
-                            It also displays covid cases state-wise in India.
-                        </p>
-                        <a href="https://github.com/2711-bharath/Covid19-Tracker-App" target="_blank" class="button button--flex button--small portfolio__button">
-                            View code
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio6.gif" alt="" class="protfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Github Profile Viewer</h3>
-                        <p class="portfolio__description">
-                            Used to display stats of a github user using their username.
-                        </p>
-                        <a href="https://github-profile-view-vue.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio3.jpg" alt="" class="protfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Employee Manager App</h3>
-                        <p class="portfolio__description">
-                            Simple CRUD application using angular and spring-boot. Used to manage employees in a single website.
-                        </p>
-                        <a href="https://github.com/2711-bharath/Spring-Boot-CRUD" target="_blank" class="button button--flex button--small portfolio__button">
-                            View code
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="swiper-wrapper">
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio1.jpg"
+                alt=""
+                class="protfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Bloggers.</h3>
+                <p class="portfolio__description">
+                  Bloggers. it is web app where user can login through gmail and
+                  can add posts and view others posts. It is adaptable to all
+                  devices and with animated interaction.
+                </p>
+                <a
+                  href="https://blogsite-bd045.web.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
             </div>
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio2.jpg"
+                alt=""
+                class="protfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Kanban Board</h3>
+                <p class="portfolio__description">
+                  It is an application for testing my vue skills. In this app
+                  users need to login and they can track their tasks on a
+                  project and change the tasks status using drag and drop
+                  between status.
+                </p>
+                <a
+                  href="https://kanban-board-2711bharath.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
             </div>
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio5.jpg"
+                alt=""
+                class="protfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">MERN Todo</h3>
+                <p class="portfolio__description">
+                  Using MongoDB, Express, React and NodeJs created a todo app.
+                  It also supports some shorcut keys for good user experience.
+                </p>
+                <a
+                  href="https://2711bharath-mern-todo-app.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
-    
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio4.jpg"
+                alt=""
+                class="protfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Covid Tracker</h3>
+                <p class="portfolio__description">
+                  It is an Angular Firebase application it uses public APIs to
+                  get information about covid country-wise. It also displays
+                  covid cases state-wise in India.
+                </p>
+                <a
+                  href="https://github.com/2711-bharath/Covid19-Tracker-App"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  View code
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio6.gif"
+                alt=""
+                class="protfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Github Profile Viewer</h3>
+                <p class="portfolio__description">
+                  Used to display stats of a github user using their username.
+                </p>
+                <a
+                  href="https://github-profile-view-vue.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio3.jpg"
+                alt=""
+                class="protfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Employee Manager App</h3>
+                <p class="portfolio__description">
+                  Simple CRUD application using angular and spring-boot. Used to
+                  manage employees in a single website.
+                </p>
+                <a
+                  href="https://github.com/2711-bharath/Spring-Boot-CRUD"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  View code
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">+91 - 91005 xxxxx</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Mail Me</h3>
+                <span class="contact__subtitle">2711bharath@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Hyderabad, India - 500072</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" method="post" enctype="text/plain" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+            <div>
+              <button type="reset" class="button button--input button--flex">
+                Send Message <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Bharath Reddy Madha</h1>
+            <span class="typewrite footer__subtitle" data-period="1000" data-type='["Frontend developer", "Backend developer", "Full Stack developer"]'>
+                <span class="wrap"></span>
+            </span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+                <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" class="footer__link">Contact</a>
+            </li>
+        </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/bharath-reddy-madha-3b66821b1/"
+              target="_blank"
+              rel="noopener"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/2711-bharath"
+              target="_blank"
+              rel="noopener"
+              class="footer__social"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/2711bharath/"
+              target="_blank"
+              rel="noopener"
+              class="footer__social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+        </div>
+      </div>
+    </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+  
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
